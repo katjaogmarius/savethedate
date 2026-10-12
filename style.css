@@ -1,0 +1,145 @@
+
+/* ----------------------------------
+   Katja & Marius — Save the Date
+   ---------------------------------- */
+
+:root {
+  --paper: #f8f4ec;
+  --paper-dark: #eee5d7;
+  --ink: #423a32;
+  --muted: #85796b;
+  --gold: #b69a70;
+  --wine: #783f43;
+  --white: #fffdf8;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100%;
+  background: var(--paper);
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  padding: 28px 18px;
+  display: grid;
+  place-items: center;
+  color: var(--ink);
+  background:
+    radial-gradient(
+      ellipse at 50% 35%,
+      rgba(255, 255, 255, 0.85),
+      transparent 65%
+    ),
+    var(--paper);
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+.invitation {
+  position: relative;
+  width: min(100%, 540px);
+  padding: 58px 30px 42px;
+  text-align: center;
+  background: rgba(255, 253, 248, 0.72);
+  border: 1px solid rgba(182, 154, 112, 0.5);
+  outline: 1px solid rgba(182, 154, 112, 0.22);
+  outline-offset: 7px;
+  box-shadow: 0 20px 70px rgba(75, 57, 38, 0.07);
+}
+
+.eyebrow {
+  margin: 0 0 30px;
+  color: var(--muted);
+  font-family: Arial, sans-serif;
+  font-size: 10px;
+  letter-spacing: 0.3em;
+}
+
+.seal {
+  width: 76px;
+  height: 76px;
+  margin: 0 auto 27px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  color: #f9eee0;
+  background: var(--wine);
+  border: 4px double rgba(255, 255, 255, 0.35);
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(65, 35, 35, 0.16);
+  font-size: 21px;
+  transform: rotate(-7deg);
+}
+
+.seal span {
+  font-size: 12px;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(34px, 8vw, 49px);
+  font-weight: normal;
+  letter-spacing: -0.045em;
+}
+
+.ampersand {
+  color: var(--gold);
+  font-style: italic;
+}
+
+.intro {
+  margin: 24px 0 12px;
+  font-size: 21px;
+  font-style: italic;
+  color: var(--muted);
+}
+
+.message {
+  max-width: 320px;
+  margin: 0 auto;
+  font-size: 15px;
+  line-height: 1.9;
+}
+
+.date-placeholder {
+  margin: 36px auto 0;
+  padding: 22px 12px;
+  border-top: 1px solid rgba(182, 154, 112, 0.45);
+  border-bottom: 1px solid rgba(182, 154, 112, 0.45);
+}
+
+.date-placeholder span {
+  font-family: Arial, sans-serif;
+  font-size: 10px;
+  letter-spacing: 0.28em;
+  color: var(--muted);
+}
+
+.date-placeholder p {
+  margin: 12px 0 0;
+  font-size: 19px;
+  font-style: italic;
+}
+
+.footer {
+  margin: 30px 0 0;
+  color: var(--muted);
+  font-size: 13px;
+  font-style: italic;
+}
+
+@media (max-width: 400px) {
+  .invitation {
+    padding: 45px 20px 32px;
+  }
+
+  .eyebrow {
+    font-size: 9px;
+    letter-spacing: 0.22em;
+  }
+}
