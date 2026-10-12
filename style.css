@@ -99,6 +99,7 @@ h1 span {
 
 
 
+
 .letter {
   position: absolute;
   z-index: 2;
@@ -124,11 +125,12 @@ h1 span {
     inset 0 0 18px rgba(174, 146, 108, 0.09),
     0 2px 5px rgba(75, 57, 38, 0.08);
 
-  transform: translateY(35%);
+  transform: translateY(0);
 
   transition:
     transform 1.8s cubic-bezier(0.16, 1, 0.3, 1),
-    box-shadow 1.2s ease;
+    box-shadow 1.2s ease,
+    z-index 0s;
 
   transition-delay: 0s;
 }
@@ -249,24 +251,20 @@ h1 span {
   left: 50%;
   width: 76px;
   height: 76px;
+
   display: grid;
   place-items: center;
+
   transform: translate(-50%, -50%) rotate(-7deg);
 
-  color: #e8e1d5;
-  background:
-    radial-gradient(circle at 32% 25%,
-      #ffffff 0%,
-      #f6f1e8 42%,
-      #d9d0c1 100%);
-
-  border: 2px solid #e4dbcd;
-  border-radius: 46% 52% 48% 50%;
+  background: rgba(241, 230, 214, 0.55);
+  border: 1px solid rgba(255, 252, 244, 0.7);
+  border-radius: 50%;
 
   box-shadow:
-    inset 2px 3px 5px rgba(255, 255, 255, 0.95),
-    inset -3px -4px 6px rgba(139, 123, 101, 0.22),
-    0 4px 9px rgba(55, 45, 35, 0.18);
+    inset 1px 1px 2px rgba(255, 255, 255, 0.9),
+    inset -1px -1px 2px rgba(151, 125, 99, 0.24),
+    0 1px 2px rgba(151, 125, 99, 0.12);
 
   transition:
     opacity 0.5s ease,
@@ -274,23 +272,29 @@ h1 span {
 }
 
 .wax-seal span {
-  color: #e5dccd;
-  font-family: "Palatino Linotype", Georgia, cursive;
-  font-size: 23px;
+  color: #e7d8c4;
+
+  font-family:
+    "Snell Roundhand",
+    "Segoe Script",
+    "Brush Script MT",
+    cursive;
+
+  font-size: 25px;
   font-style: italic;
   font-weight: bold;
   letter-spacing: -2px;
 
   text-shadow:
-    1px 1px 0 rgba(255, 255, 255, 0.95),
-    -1px -1px 1px rgba(148, 132, 112, 0.65),
-    0 2px 3px rgba(148, 132, 112, 0.25);
+    1px 1px 0 rgba(255, 252, 244, 0.95),
+    -1px -1px 1px rgba(151, 125, 99, 0.75),
+    0 1px 2px rgba(151, 125, 99, 0.2);
 }
 
 .wax-seal i {
   font-size: 13px;
-  font-weight: normal;
   font-style: italic;
+  font-weight: normal;
 }
 
 
@@ -334,7 +338,10 @@ h1 span {
     0 14px 28px rgba(75, 57, 38, 0.13),
     inset 0 0 18px rgba(174, 146, 108, 0.09);
 
-  transition-delay: 1.8s;
+  transition:
+    transform 1.8s cubic-bezier(0.16, 1, 0.3, 1) 1.8s,
+    box-shadow 1.2s ease 1.8s,
+    z-index 0s 1.8s;
 }
 
 
