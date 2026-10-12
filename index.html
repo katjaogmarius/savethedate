@@ -4,33 +4,44 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#f7f2e9">
+  <meta name="theme-color" content="#f8f4ec">
   <meta name="description" content="En særlig besked fra Katja og Marius.">
   <title>Katja &amp; Marius — Save the Date</title>
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-  <main class="invitation">
+  <main class="scene">
     <p class="eyebrow">EN SÆRLIG MEDDELELSE</p>
 
-    <div class="seal" aria-hidden="true">K <span>&amp;</span> M</div>
+    <h1>Katja <span>&amp;</span> Marius</h1>
+    <p class="subtitle">Vi har noget at dele med jer...</p>
 
-    <h1>Katja <span class="ampersand">&amp;</span> Marius</h1>
+    <button class="envelope-button" id="envelopeButton"
+      aria-label="Åbn invitationen" aria-expanded="false">
+      <span class="envelope" id="envelope">
+        <span class="letter">
+          <span class="letter-inner">
+            <span class="letter-eyebrow">SAVE THE DATE</span>
+            <span class="letter-title">Vi skal giftes!</span>
+            <span class="letter-names">Katja &amp; Marius</span>
+            <span class="letter-date">Datoen afsløres snart</span>
+            <span class="letter-footer">Vi glæder os til at fejre dagen med jer</span>
+          </span>
+        </span>
 
-    <p class="intro">
-      Noget smukt er på vej...
-    </p>
+        <span class="envelope-back"></span>
+        <span class="envelope-front"></span>
+        <span class="envelope-flap"></span>
 
-    <p class="message">
-      Vi glæder os til at dele en særlig dag med jer.
-    </p>
+        <span class="wax-seal" aria-hidden="true">
+          <span>K <i>&amp;</i> M</span>
+        </span>
+      </span>
+    </button>
 
-    <div class="date-placeholder">
-      <span>GEM DATOEN</span>
-      <p>Datoen afsløres snart</p>
-    </div>
-
-    <p class="footer">Med kærlighed, Katja &amp; Marius</p>
+    <p class="instruction" id="instruction">Tryk på konvolutten for at åbne</p>
+    <p class="signature">Med kærlighed, Katja &amp; Marius</p>
   </main>
 </body>
 </html>
