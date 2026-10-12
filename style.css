@@ -98,6 +98,7 @@ h1 span {
 }
 
 
+
 .letter {
   position: absolute;
   z-index: 2;
@@ -123,14 +124,15 @@ h1 span {
     inset 0 0 18px rgba(174, 146, 108, 0.09),
     0 2px 5px rgba(75, 57, 38, 0.08);
 
-  transform: translateY(0);
+  transform: translateY(35%);
 
   transition:
-    transform 1.5s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 1.8s cubic-bezier(0.16, 1, 0.3, 1),
     box-shadow 1.2s ease;
 
   transition-delay: 0s;
 }
+
 
 .letter-inner {
   height: 100%;
@@ -220,6 +222,7 @@ h1 span {
   background: #f1e6d6;
   clip-path: polygon(0 0, 50% 57%, 100% 0, 100% 100%, 0 100%);
   border-radius: 3px;
+  pointer-events: none;
 }
 
 
@@ -337,14 +340,9 @@ h1 span {
 
 .envelope-button.is-open .letter-inner {
   opacity: 1;
-  transition-delay: 1s;
+  transition-delay: 2.8s;
 }
 
-
-.envelope-button.is-open .letter-inner {
-  opacity: 1;
-  transition-delay: 0.85s;
-}
 
 @media (max-width: 420px) {
   .envelope-button {
