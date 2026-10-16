@@ -284,6 +284,18 @@ h1 span {
 
   background:
     linear-gradient(
+      46deg,
+      transparent 49.5%,
+      rgba(205, 199, 190, 0.55) 50%,
+      transparent 50.5%
+    ),
+    linear-gradient(
+      -46deg,
+      transparent 49.5%,
+      rgba(205, 199, 190, 0.55) 50%,
+      transparent 50.5%
+    ),
+    linear-gradient(
       155deg,
       #ffffff 0%,
       #fbfaf7 52%,
