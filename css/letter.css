@@ -165,10 +165,15 @@
     rotateX(180deg);
 
   transition:
-    transform 1.4s
+    transform 1s
     cubic-bezier(0.65, 0, 0.35, 1);
 
-  transition-delay: 4s;
+  /*
+     Was 4s.
+     First fold now starts a little earlier.
+  */
+
+  transition-delay: 3.6s;
 }
 
 
@@ -185,21 +190,25 @@
 
   transform-origin: top center;
 
-  transform: rotateX(180deg);
+  transform:
+    rotateX(180deg);
 
   transition:
-    transform 1.4s
+    transform 1s
     cubic-bezier(0.65, 0, 0.35, 1);
 
-  transition-delay: 5.6s;
+  /*
+     Fold 1 starts at 3.6s and lasts 1s.
+     Fold 2 starts shortly afterwards.
+  */
+
+  transition-delay: 4.75s;
 }
 
 
 /*
-   Hide Panel 3 content while the letter
-   is still folded.
-
-   The white paper itself remains visible.
+   Keep Panel 3 white while
+   the letter is still folded.
 */
 
 .panel-three .panel-content {
@@ -370,7 +379,8 @@
    ======================================== */
 
 .envelope-button.is-open .letter {
-  transform: translateY(-72%);
+  transform:
+    translateY(-72%);
 
   z-index: 4;
 
@@ -395,15 +405,15 @@
 
 
 /*
-   Panel 1 becomes visible as the
-   first fold starts opening.
+   Panel 1 becomes visible as
+   Fold 1 begins.
 */
 
 .envelope-button.is-open
 .panel-one .panel-front {
   opacity: 1;
 
-  transition-delay: 4.05s;
+  transition-delay: 3.65s;
 }
 
 
@@ -420,12 +430,12 @@
 
 /*
    Panel 3 content becomes visible
-   when the second fold opens.
+   when Fold 2 begins.
 */
 
 .envelope-button.is-open
 .panel-three .panel-content {
   opacity: 1;
 
-  transition-delay: 5.65s;
+  transition-delay: 4.8s;
 }
