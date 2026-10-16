@@ -194,6 +194,15 @@
   transition-delay: 5.6s;
 }
 
+.panel-three .panel-front {
+  opacity: 0;
+
+  transition:
+    opacity 0.01s linear;
+
+  transition-delay: 0s;
+}
+
 
 /* ========================================
    PANEL CONTENT
@@ -394,8 +403,13 @@
    STEP 3
    SECOND FOLD OPENS DOWN
    ======================================== */
-
 .envelope-button.is-open .panel-three {
   transform:
     rotateX(0deg);
+}
+
+.envelope-button.is-open .panel-three .panel-front {
+  opacity: 1;
+
+  transition-delay: 5.65s;
 }
