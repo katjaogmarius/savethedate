@@ -284,6 +284,20 @@ h1 span {
 
   background:
     linear-gradient(
+      to bottom right,
+      transparent 49.6%,
+      rgba(205, 199, 190, 0.72) 49.8%,
+      rgba(205, 199, 190, 0.72) 50.2%,
+      transparent 50.4%
+    ),
+    linear-gradient(
+      to bottom left,
+      transparent 49.6%,
+      rgba(205, 199, 190, 0.72) 49.8%,
+      rgba(205, 199, 190, 0.72) 50.2%,
+      transparent 50.4%
+    ),
+    linear-gradient(
       155deg,
       #ffffff 0%,
       #fbfaf7 52%,
@@ -298,9 +312,6 @@ h1 span {
 
   transform-origin: top center;
   transform: rotateX(0deg);
-
-  filter:
-    drop-shadow(0 1.5px 0 rgba(190, 184, 174, 0.72));
 
   transition:
     transform 1.8s cubic-bezier(0.4, 0, 0.2, 1);
