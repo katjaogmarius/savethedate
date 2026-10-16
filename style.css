@@ -400,13 +400,6 @@ h1 span {
 }
 
 
-.envelope-button.is-open .wax-seal {
-  opacity: 0;
-  transform: translate(-50%, -70%) scale(0.7);
-  pointer-events: none;
-}
-
-
 .envelope-button.is-open .letter {
   transform: translateY(-72%);
   z-index: 4;
@@ -431,11 +424,6 @@ h1 span {
 @media (max-width: 420px) {
   .envelope-button {
     width: 94%;
-  }
-
-  .wax-seal {
-    width: 60px;
-    height: 60px;
   }
 
   .letter {
