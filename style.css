@@ -318,6 +318,15 @@ h1 span {
   pointer-events: none;
 }
 
+.flap-edge-lines line {
+  fill: none;
+  stroke: rgba(205, 199, 190, 0.55);
+  stroke-width: 2;
+  vector-effect: non-scaling-stroke;
+  stroke-linecap: round;
+  pointer-events: none;
+}
+
 .floral-lines {
   fill: none;
   stroke: #e1ddd5;
