@@ -357,7 +357,8 @@ h1 span {
 
   white-space: nowrap;
 
-  color: #ded9d0;
+  /* Næsten samme farve som papiret */
+  color: rgba(246, 244, 239, 0.98);
 
   font-family:
     "Snell Roundhand",
@@ -367,9 +368,11 @@ h1 span {
 
   font-style: italic;
 
+  /* Samme princip som embossingen på blomsterne */
   text-shadow:
-    1px 1px 0 rgba(255, 255, 255, 1),
-    -1px -1px 1px rgba(155, 146, 133, 0.55);
+    -1px -1px 0 rgba(255, 255, 255, 1),
+    1px 1px 0 rgba(173, 166, 154, 0.55),
+    1.5px 1.5px 1px rgba(145, 136, 122, 0.15);
 
   pointer-events: none;
 }
