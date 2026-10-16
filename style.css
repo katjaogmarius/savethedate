@@ -321,13 +321,15 @@ h1 span {
 .flap-edge-lines {
   fill: none;
 
-  stroke: rgba(205, 199, 190, 0.72);
-  stroke-width: 2;
+  stroke: rgba(205, 199, 190, 0.55);
+  stroke-width: 2.8;
 
   vector-effect: non-scaling-stroke;
 
-  stroke-linecap: square;
+  stroke-linecap: round;
   stroke-linejoin: round;
+
+  filter: blur(0.15px);
 
   pointer-events: none;
 }
