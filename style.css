@@ -284,20 +284,6 @@ h1 span {
 
   background:
     linear-gradient(
-      to bottom right,
-      transparent 49.6%,
-      rgba(205, 199, 190, 0.72) 49.8%,
-      rgba(205, 199, 190, 0.72) 50.2%,
-      transparent 50.4%
-    ),
-    linear-gradient(
-      to bottom left,
-      transparent 49.6%,
-      rgba(205, 199, 190, 0.72) 49.8%,
-      rgba(205, 199, 190, 0.72) 50.2%,
-      transparent 50.4%
-    ),
-    linear-gradient(
       155deg,
       #ffffff 0%,
       #fbfaf7 52%,
@@ -329,6 +315,20 @@ h1 span {
   transform: none;
 
   overflow: visible;
+  pointer-events: none;
+}
+
+.flap-edge-lines {
+  fill: none;
+
+  stroke: rgba(205, 199, 190, 0.72);
+  stroke-width: 2;
+
+  vector-effect: non-scaling-stroke;
+
+  stroke-linecap: square;
+  stroke-linejoin: round;
+
   pointer-events: none;
 }
 
