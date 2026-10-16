@@ -1,0 +1,23 @@
+@media (max-width: 420px) {
+
+  .envelope-button {
+    width: 94%;
+  }
+
+  .signature {
+    margin-top: 35px;
+  }
+
+}
+
+
+@media (prefers-reduced-motion: reduce) {
+
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+
+}
