@@ -321,14 +321,6 @@ h1 span {
   pointer-events: none;
 }
 
-.flap-fold-lines {
-  fill: none;
-  stroke: rgba(190, 184, 174, 0.72);
-  stroke-width: 2;
-  stroke-linecap: square;
-  pointer-events: none;
-}
-
 .floral-lines {
   fill: none;
   stroke: #e1ddd5;
