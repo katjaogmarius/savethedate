@@ -321,7 +321,7 @@ h1 span {
 .flap-edge-lines line {
   fill: none;
   stroke: rgba(205, 199, 190, 0.55);
-  stroke-width: 2;
+  stroke-width: 3.5;
   vector-effect: non-scaling-stroke;
   stroke-linecap: round;
   pointer-events: none;
