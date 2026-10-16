@@ -310,9 +310,9 @@ h1 span {
 .floral-emboss {
   position: absolute;
   left: 50%;
-  top: 2%;
-  width: 92%;
-  height: 84%;
+  top: 0;
+  width: 100%;
+  height: 100%;
 
   transform: translateX(-50%);
 
