@@ -329,14 +329,18 @@ h1 span {
 
 .floral-lines {
   fill: none;
-  stroke: #e1ddd5;
-  stroke-width: 2;
+
+  stroke: rgba(211, 207, 199, 0.82);
+  stroke-width: 1.65;
+
   stroke-linecap: round;
   stroke-linejoin: round;
 
   filter:
-    drop-shadow(1px 1px 0 rgba(255, 255, 255, 1))
-    drop-shadow(-1px -1px 0 rgba(158, 150, 138, 0.38));
+    drop-shadow(0.8px 0.8px 0 rgba(255, 255, 255, 0.98))
+    drop-shadow(-0.8px -0.8px 0 rgba(157, 149, 137, 0.28));
+
+  pointer-events: none;
 }
 
 .flap-monogram {
