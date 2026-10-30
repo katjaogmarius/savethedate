@@ -158,10 +158,12 @@
     cubic-bezier(0.65, 0, 0.35, 1);
 
   /*
-     First fold starts at 2 seconds.
+     CLOSING:
+     Panel 2 waits until Panel 3
+     has folded back up.
   */
 
-  transition-delay: 2s;
+  transition-delay: 1.1s;
 }
 
 
@@ -185,11 +187,11 @@
     cubic-bezier(0.65, 0, 0.35, 1);
 
   /*
-     Fold 2 begins shortly after
-     Fold 1 has finished.
+     CLOSING:
+     Panel 3 folds up immediately.
   */
 
-  transition-delay: 3.1s;
+  transition-delay: 0s;
 }
 
 
@@ -387,6 +389,13 @@
 .envelope-button.is-open .panel-two {
   transform:
     rotateX(0deg);
+
+  /*
+     OPENING:
+     Keep the current opening timing.
+  */
+
+  transition-delay: 2s;
 }
 
 
@@ -411,6 +420,13 @@
 .envelope-button.is-open .panel-three {
   transform:
     rotateX(0deg);
+
+  /*
+     OPENING:
+     Keep the current second-fold timing.
+  */
+
+  transition-delay: 3.1s;
 }
 
 
