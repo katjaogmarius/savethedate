@@ -4,26 +4,47 @@
      MOBILE BASE
      ======================================== */
 
+  .scene {
+    width: 100%;
+    padding-top: 10px;
+  }
+
   .envelope-button {
     width: 96%;
   }
 
 
-  /* Prevent mobile browsers from
-     automatically styling text blue */
+  /* ========================================
+     OPEN LETTER POSITION
+     ======================================== */
 
-  .letter,
-  .letter-names,
-  .letter-names a {
-    color: var(--ink);
-    text-decoration: none;
-    -webkit-text-fill-color: var(--ink);
+  /*
+     On mobile the unfolded letter is very tall.
+
+     Move the complete invitation further up
+     when opened so the three panels are better
+     centered in the viewport.
+  */
+
+  .envelope-button.is-open .letter {
+    transform:
+      translateY(-105%);
   }
 
 
   /* ========================================
      LETTER TYPOGRAPHY
      ======================================== */
+
+  .letter,
+  .letter-names,
+  .letter-names a {
+    color: var(--ink);
+
+    text-decoration: none;
+
+    -webkit-text-fill-color: var(--ink);
+  }
 
   .letter-names {
     font-size: 18px;
