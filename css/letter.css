@@ -279,11 +279,33 @@
 
 
 .letter-date {
-  margin-top: 5px;
+  margin-top: 6px;
+
+  font-family:
+    "Palatino Linotype",
+    "Book Antiqua",
+    Georgia,
+    serif;
 
   color: var(--wine);
 
-  font-size: 12px;
+  font-size:
+    clamp(16px, 3.4vw, 21px);
+
+  font-weight: normal;
+
+  letter-spacing: 0.08em;
+
+  line-height: 1;
+}
+
+
+.letter-date span {
+  margin: 0 2px;
+
+  color: var(--gold);
+
+  font-size: 0.75em;
 }
 
 
