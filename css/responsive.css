@@ -1,13 +1,67 @@
 @media (max-width: 420px) {
 
+  /* ========================================
+     MOBILE BASE
+     ======================================== */
+
   .envelope-button {
-    width: 94%;
+    width: 96%;
   }
+
+
+  /* Prevent mobile browsers from
+     automatically styling text blue */
+
+  .letter,
+  .letter-names,
+  .letter-names a {
+    color: var(--ink);
+    text-decoration: none;
+    -webkit-text-fill-color: var(--ink);
+  }
+
+
+  /* ========================================
+     LETTER TYPOGRAPHY
+     ======================================== */
+
+  .letter-names {
+    font-size: 18px;
+  }
+
+  .letter-date {
+    font-size: 17px;
+  }
+
+  .letter-title {
+    font-size: 21px;
+  }
+
+
+  /* ========================================
+     COUNTDOWN
+     ======================================== */
+
+  .countdown {
+    gap: 9px;
+  }
+
+  .countdown-item {
+    min-width: 34px;
+  }
+
+  .countdown-item strong {
+    font-size: 21px;
+  }
+
+
+  /* ========================================
+     PAGE
+     ======================================== */
 
   .signature {
     margin-top: 35px;
   }
-
 }
 
 
