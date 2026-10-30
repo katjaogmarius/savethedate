@@ -344,33 +344,53 @@
    PANEL 3 CONTENT
    ======================================== */
 
-.countdown-placeholder {
+.countdown {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 14px;
+
+  margin: 10px 0 12px;
+}
+
+
+.countdown-item {
   display: flex;
   flex-direction: column;
 
   align-items: center;
 
-  margin: 6px 0;
+  min-width: 42px;
 }
 
 
-.countdown-placeholder strong {
-  font-size: 34px;
+.countdown-item strong {
+  font-family:
+    "Palatino Linotype",
+    "Book Antiqua",
+    Georgia,
+    serif;
+
+  font-size: 24px;
 
   font-weight: normal;
 
-  letter-spacing: 0.08em;
+  line-height: 1;
+
+  color: #4a3933;
 }
 
 
-.countdown-placeholder span {
-  margin-top: 2px;
+.countdown-item span {
+  margin-top: 6px;
 
   font-family: Arial, sans-serif;
 
-  font-size: 7px;
+  font-size: 6px;
 
-  letter-spacing: 0.28em;
+  letter-spacing: 0.18em;
 
   color: var(--muted);
 }
