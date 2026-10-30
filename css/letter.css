@@ -23,9 +23,19 @@
 
   transform: translateY(0);
 
+  /*
+     CLOSING:
+     Wait until Panel 3 + Panel 2
+     have folded together before
+     moving the letter back down.
+  */
+
   transition:
-    transform 1.8s cubic-bezier(0.16, 1, 0.3, 1),
-    z-index 0s;
+    transform 1.8s
+    cubic-bezier(0.16, 1, 0.3, 1)
+    2.2s,
+
+    z-index 0s 4s;
 
   pointer-events: none;
 }
